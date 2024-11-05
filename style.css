@@ -5,6 +5,8 @@ body {
     /* min-height: 100px; */
     flex-direction: column;
     background-color: brown;
+    justify-content: center;
+    align-items: center;
     
     
 }
@@ -15,10 +17,14 @@ body {
     height: 435px;
     display: flex;
     flex-wrap: wrap;
+    flex: 1;
     flex-direction: column;
     box-sizing: border-box;
     border: 1px solid black;
     background-color: antiquewhite;
+    justify-content: center;
+    align-items: center;
+
     
 }
 
@@ -28,6 +34,29 @@ body {
     min-width: 25px;
     min-height: 25px;
     gap: 0;
+    flex: 1, 0, auto;
+    aspect-ratio: 1/1;
+    
+    
 
 
+}
+
+#btn {
+    display: flex;
+    justify-content:  space-between;
+    gap: 8px;
+    padding: 12px;
+}
+
+.resetBtn {
+    font: 32px;
+    border-radius: 8px;
+    padding: 8px;
+}
+
+.clearBtn {
+    font: 20px;
+    border-radius: 8px;
+    padding: 8px;
 }
