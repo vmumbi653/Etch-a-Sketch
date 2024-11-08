@@ -18,9 +18,9 @@ body {
     height: 500px; */
     display: flex;
     flex-wrap: wrap;
-    flex: 1; 
+    /* flex: 1;  */
     flex-direction: column;
-    /* box-sizing: border-box; */
+    box-sizing: border-box;
     border: 1px solid black;
     background-color: antiquewhite;
     justify-content: center;

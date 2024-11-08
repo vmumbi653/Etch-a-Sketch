@@ -2,6 +2,7 @@ const container = document.getElementById('container');
 
 const sqr = document.querySelector('.square');
  let gridSize = 16;
+ const containerSize = 400;
 
 //create square divs
 // function makeDivs(num) {
@@ -14,8 +15,7 @@ const sqr = document.querySelector('.square');
 // makeDivs();
 // //divs are showing on DOM
 
-function makeDivs(num) {
-    const containerSize = 400;
+function makeDivs(num) {  
     container.style.width = `${containerSize}px`;
     container.style.height = `${containerSize}px`;
     const squareSize = Math.floor(containerSize / num);
@@ -60,6 +60,7 @@ function randomColor() {
 }
 
 }
+makeDivs(gridSize);
 
 //select buttons and add event listeners
 const reset = document.querySelector('.resetBtn');
