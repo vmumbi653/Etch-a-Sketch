@@ -42,11 +42,11 @@ square.forEach(square => {
 
 });
 
-square.forEach(square => {
-    square.addEventListener('mouseout', function() {
-        square.style.backgroundColor =randomColor();
-    });
-});
+// square.forEach(square => {
+//     square.addEventListener('mouseout', function() {
+//         square.style.backgroundColor =randomColor();
+//     });
+// });
 
 //generate random colors
 
@@ -67,13 +67,14 @@ const reset = document.querySelector('.resetBtn');
 reset.addEventListener('click', resetGrid);
 
 function resetGrid() {
-    let num = parseInt(prompt('Please input a number to set the grid: '));
+    let grid = parseInt(prompt('Please input a number to set the grid: '));
 
-    if(num == NaN || num < 1 || num > 100) {
+    if(grid == NaN || grid < 1 || grid > 100) {
         return prompt('Invalid number. Please return a number less than or equal to 100');
     }else {
-        makeDivs(num);
+        makeDivs(grid);
     }
+    gridSize = grid;
 }
 
 // makeDivs(gridSize);

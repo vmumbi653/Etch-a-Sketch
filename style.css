@@ -1,3 +1,4 @@
+
 body {
     display: flex;
     justify-content: center;
@@ -14,14 +15,12 @@ body {
 }
 
  #container {
-    /* width: 500px;
-    height: 500px; */
+    width: 400px;
+    height: 400px; 
     display: flex;
     flex-wrap: wrap;
-    /* flex: 1;  */
     flex-direction: column;
     box-sizing: border-box;
-    border: 1px solid black;
     background-color: antiquewhite;
     justify-content: center;
     align-items: center;
@@ -30,16 +29,10 @@ body {
 }
 
 #container > .square {
+    display: flex;
     flex-wrap: wrap;
-    /* border: none; */
-    border: 1px solid black;
-    /* min-width: 25px;
-     min-height: 25px; */
-    flex: 1, 1, auto;
+    border: none;
     aspect-ratio: 1 / 1;
-    
-    
-
 
 }
 
